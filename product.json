@@ -1,0 +1,35 @@
+[
+    {
+        "name": "iphone",
+        "price": 154,
+        "feature": true,
+        "company": "apple"
+    },
+    {
+        "name": "samsung galaxy",
+        "price": 256,
+        "feature": true,
+        "company": "samsung"
+    },
+    {
+        "name": "iphone 10",
+        "price": 1154,
+        "feature": true,
+        "company": "apple"
+    },
+    {
+        "name": "watch",
+        "price": 152,
+        "company": "apple"
+    },
+    {
+        "name": "watch 10",
+        "price": 321,
+        "company": "apple"
+    },
+    {
+        "name": "mi20",
+        "price": 234,
+        "company": "mi"
+    }
+]
