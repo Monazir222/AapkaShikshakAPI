@@ -20,7 +20,7 @@ const getAllProducts = async (req, res) => {
 
     if (sort) {
         // let sortFix = select.replace("," , " ");
-        let sortFix = select.split(",").join(" ");
+        let sortFix = sort.split(",").join(" ");
         apiData = apiData.sort(sortFix);
     }
 
