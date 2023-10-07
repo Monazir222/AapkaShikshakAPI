@@ -3,13 +3,15 @@ require("dotenv").config();
 const express = require("express");
 const app = express();
 const connectDB = require("./db/connect");
+const cors = require('cors')
 
 app.use(express.json());
-// app.use(cors());
+app.use(cors());
 
 const PORT = process.env.PORT || 5000;
 
 const products_routes = require("./routes/products")
+const pdf_Route = require("./routes/pdf")
 
 app.get("/", (req, res) => {
      res.send("aapka shikshak !");
@@ -17,6 +19,9 @@ app.get("/", (req, res) => {
 
 //middleware or To set routes
 app.use("/api/products", products_routes )
+app.use("/api/uploadPdf", pdf_Route)
+
+
 
 const start = async () => {
     try {
